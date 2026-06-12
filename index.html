@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unheard Story — Stories Nobody Heard. Until Now.</title>
+  <meta name="description" content="Stream every Unheard Story — 3D animated shorts about family, justice, and secrets. New stories every week.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23e50914'/%3E%3Ctext x='32' y='47' font-family='Arial Black,Arial' font-size='40' font-weight='900' fill='white' text-anchor='middle'%3EU%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- intro splash -->
+  <div id="intro" aria-hidden="true"><div class="brand">UNHEARD</div></div>
+
+  <!-- nav -->
+  <nav id="nav">
+    <a class="logo" href="#" onclick="scrollTo({top:0,behavior:'smooth'});return false;">
+      <span class="u-badge">U</span> UNHEARD STORY
+    </a>
+    <ul class="nav-links">
+      <li><a href="#" class="active" onclick="scrollTo({top:0,behavior:'smooth'});return false;">Home</a></li>
+      <li><a href="#row-all" data-jump="#row-all">Shorts</a></li>
+      <li><a href="#row-justice" data-jump="#row-justice">Justice</a></li>
+      <li><a href="#row-heart" data-jump="#row-heart">Family</a></li>
+      <li><a href="#row-long" data-jump="#row-long">Features</a></li>
+      <li><a href="#row-soon" data-jump="#row-soon">Coming Soon</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="search-box">
+        <button class="icon-btn" id="search-toggle" aria-label="Search">
+          <svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5L21 21" stroke-linecap="round"/></svg>
+        </button>
+        <input id="search-input" type="text" placeholder="Titles, moods, villains…" aria-label="Search stories">
+      </div>
+      <a class="icon-btn" href="https://www.youtube.com/@UnheardYTStory?sub_confirmation=1" target="_blank" rel="noopener" aria-label="Subscribe on YouTube" title="Subscribe on YouTube">
+        <svg viewBox="0 0 24 24"><path d="M6 9a6 6 0 1 1 12 0c0 5 2 6 2 6H4s2-1 2-6zM10 19a2.2 2.2 0 0 0 4 0" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <div class="avatar" title="Krixel Studio">K</div>
+    </div>
+  </nav>
+
+  <!-- hero -->
+  <header id="hero">
+    <div class="hero-backdrop"></div>
+    <div class="hero-shade"></div>
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <div class="hero-rank"></div>
+        <h1 class="hero-title"></h1>
+        <div class="hero-meta"></div>
+        <p class="hero-syn"></p>
+        <div class="hero-actions">
+          <button class="btn btn-play">
+            <svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z" fill="currentColor"/></svg> Play
+          </button>
+          <button class="btn btn-info">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8v.5" stroke-linecap="round"/></svg> More Info
+          </button>
+        </div>
+      </div>
+      <div class="hero-poster-wrap">
+        <img class="hero-poster" alt="">
+      </div>
+    </div>
+  </header>
+
+  <!-- rows -->
+  <main id="rows"></main>
+
+  <!-- search results -->
+  <section id="search-results" aria-live="polite"></section>
+
+  <!-- modal -->
+  <div id="modal-overlay"></div>
+
+  <!-- footer -->
+  <footer>
+    <div class="foot-brand">UNHEARD STORY</div>
+    <div class="foot-tag">Stories nobody heard. Until now.</div>
+    <div class="foot-links">
+      <a href="https://www.youtube.com/@UnheardYTStory" target="_blank" rel="noopener">YouTube Channel</a>
+      <a href="https://www.youtube.com/@UnheardYTStory/shorts" target="_blank" rel="noopener">All Shorts</a>
+      <a href="https://www.youtube.com/@UnheardYTStory?sub_confirmation=1" target="_blank" rel="noopener">Subscribe</a>
+    </div>
+    <p class="foot-note">
+      © 2026 Unheard Story · A Krixel Studio production. All stories are original 3D-animated fiction.
+      This catalog links to videos hosted on YouTube. Not affiliated with Netflix — we just like the vibe.
+    </p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
